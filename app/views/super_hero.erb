@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Build a Hero, buddy...</title>
+  </head>
+  <body>
+    <h1>Build Your Hero!!!</h1>
+    <form method="post" action="/teams">
+      <p><label for="name"> Hero's Name: </label> <input type="text" id="name" name="hero[name]"></p>
+      <p><label for="superpower"> Hero's Power: </label><input type="text" id="superpower" name="hero[superpower]"></p>
+      <p><label for="bio"> Hero's Biography: </label><input type="text" id="bio" name="hero[bio]"></p>
+      <p></p><input type="submit" value="Submit"></p>
+    </form>
+  </body>
+</html>
