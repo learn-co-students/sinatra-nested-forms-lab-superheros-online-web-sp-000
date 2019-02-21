@@ -1,16 +1,61 @@
-class Superhero
-  attr_accessor :name, :power, :bio
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1>Create a Team and Heroes!</h1>
+    <form action="/teams" method="POST">
+      <div>
+         <label for="team[name]">Team Name:</label>
+         <input type="text" name="team[name]" id="team_name">
 
-  @@all = []
+          <label for="team[motto]">Team Motto:</label>
+         <input type="text" name="team[motto]" id="team_motto">
+      </div>
 
-  def initialize(params)
-    @name = params[:name]
-    @power = params[:power]
-    @bio = params[:bio]
-    @@all << self
-  end
+       <div>
+        <h2>Hero 1</h2>
+        <label for="member1_name">Hero's Name:</label>
+        <input type="text" name="team[members][][name]" id="member1_name">
 
-  def self.all
-    @@all
-  end
-end
+         <label for="member1_power">Hero's Power:</label>
+        <input type="text" name="team[members][][power]" id="member1_power">
+
+
+         <label for="member1_bio">Hero's Biography:</label>
+        <input type="text" name="team[members][][bio]" id="member1_bio">
+      </div>
+
+       <div>
+        <h2>Hero 1</h2>
+        <label for="member2_name">Hero's Name:</label>
+        <input type="text" name="team[members][][name]" id="member2_name">
+
+         <label for="member2_power">Hero's Power:</label>
+        <input type="text" name="team[members][][power]" id="member2_power">
+
+
+         <label for="member2_biography">Hero's Biography:</label>
+        <input type="text" name="team[members][][bio]" id="member2_bio">
+      </div>
+
+       <div>
+        <h2>Hero 3</h2>
+        <label for="member3_name">Hero's Name:</label>
+        <input type="text" name="team[members][][name]" id="member3_name">
+
+         <label for="member3_power">Hero's Power:</label>
+        <input type="text" name="team[members][][power]" id="member3_power">
+
+
+         <label for="member3_biography">Hero's Biography:</label>
+        <input type="text" name="team[members][][bio]" id="member3_bio">
+      </div>
+
+       <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
