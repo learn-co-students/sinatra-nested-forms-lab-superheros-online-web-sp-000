@@ -9,8 +9,7 @@ class App < Sinatra::Base
   end
 
   get '/teams/:name' do
-    @team = Team.find_by_name(params[:name])
-    binding.pry
+
   end
 
   post '/teams' do
@@ -20,7 +19,7 @@ class App < Sinatra::Base
     team_details[:heroes].each do |hero_details|
       Hero.new(hero_details)
     end
-    binding.pry
+
     redirect to '/teams/#{team.name}'
   end
 
