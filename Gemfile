@@ -4,7 +4,6 @@ source "https://rubygems.org"
 # gem "rails"
 
 gem 'sinatra', '1.4.3'
-gem 'pluralize', '~> 0.2.0'
 gem 'sqlite3', '~> 1.3.6'
 gem "rake", "12.3.2"
 gem "database_cleaner"
