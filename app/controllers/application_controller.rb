@@ -8,12 +8,12 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get '/teams/:name' do
-
+  get '/teams' do
+    @team = Team.all.last
+    erb :team
   end
 
   post '/teams' do
-    binding.pry
     team_details = params[:team]
     team = Team.create(name: team_details[:name], motto: team_details[:motto])
 
@@ -23,6 +23,6 @@ class App < Sinatra::Base
       hero.save
     end
 
-    redirect to '/teams/#{team.name}'
+    redirect to '/teams'
   end
 end
