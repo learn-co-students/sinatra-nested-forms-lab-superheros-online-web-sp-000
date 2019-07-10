@@ -1,11 +1,11 @@
 class SuperHero
   attr_accessor :name, :power, :bio
-  att_reader :team
+  attr_reader :team
 
   def initialize(params)
     self.name = params[:name]
     self.power = params[:power]
-    self.bio = params[:bio]
+    self.bio = params[:biography]
   end
 
   def team=(team)
