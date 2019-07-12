@@ -5,9 +5,13 @@ source "https://rubygems.org"
 
 gem 'sinatra', '1.4.3'
 gem 'rake', '10.4.2'
+gem 'sinatra-reloader', require: false
+gem 'sinatra-activerecord', require: 'sinatra/active-activerecord'
+gem 'sqlite3'
 gem 'thin', '1.6.4'
 gem 'shotgun', '0.9'
 gem 'pry', '0.10.3'
+gem 'tux'
 gem 'require_all', '1.3.2'
 
 group :test do
