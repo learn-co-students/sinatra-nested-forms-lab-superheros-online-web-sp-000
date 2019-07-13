@@ -1,17 +1,23 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
+gem "rails"
 
-gem 'sinatra', '1.4.3'
-gem 'rake', '10.4.2'
-gem 'thin', '1.6.4'
-gem 'shotgun', '0.9'
-gem 'pry', '0.10.3'
-gem 'require_all', '1.3.2'
+gem 'sinatra', require: 'sinatra/base'
+gem 'sinatra-reloader', require: false 
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rake'
+gem 'require_all'
+gem 'sqlite3', '~>1.3.6'
+gem 'thin'
+gem 'shotgun'
+gem 'pry'
+
 
 group :test do
-  gem 'rspec', '3.3.0'
-  gem 'capybara', '2.5.0'
-  gem 'rack-test', '>= 0.5.4'
+  gem 'rspec'
+  gem 'capybara'
+  gem 'rack-test'
+  gem 'database_cleaner'
 end
