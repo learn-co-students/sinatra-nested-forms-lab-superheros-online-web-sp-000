@@ -14,6 +14,8 @@ class App < Sinatra::Base
       hero.team = @team 
       hero.save
     end 
+
+
     erb :team
   end
 
