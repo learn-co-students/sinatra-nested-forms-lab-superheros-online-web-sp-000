@@ -15,11 +15,6 @@ class App < Sinatra::Base
       
       
       @members = params[:team][:members]
-      #@members.each do |member|
-      #  @hero_name => member[:name]
-      #  @hero_power => member[:power]
-      #  @hero_biography =>member[:hero_biography]
-      #end
       erb :team
     end
     
