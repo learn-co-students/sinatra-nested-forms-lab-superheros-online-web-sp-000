@@ -6,19 +6,19 @@ class App < Sinatra::Base
 
     
     get '/' do
-      erb :'../views/super_hero'
+      erb :super_hero
     end
     
     post '/teams' do
       @team = Team.new(params[:team])
-      
+
       params[:team][:members].each do |member|
         Member.new(member)
       end
       
       @members = Member.all
       
-      erb :'../views/team'
+      erb :team
     end
     
 end
