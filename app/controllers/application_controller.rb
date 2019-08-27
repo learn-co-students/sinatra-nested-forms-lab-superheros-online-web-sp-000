@@ -10,8 +10,15 @@ class App < Sinatra::Base
     end
 
     post '/filled' do
-      raise params.inspect
-      @info = params[:team]
+      team_info = params[:team]
+      hero_info = params[:team][:super_hero]
+      @hero_list = []
+      @team = Team.new(team_info)
+      hero_info.each do |hero|
+        @hero_list<<Hero.new(hero)
+      end
+      # binding.pry
+
 
       erb :team
     end
