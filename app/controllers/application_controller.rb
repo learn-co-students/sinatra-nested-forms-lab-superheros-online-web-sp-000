@@ -9,7 +9,8 @@ get '/' do
 end 
 
 post '/teams' do 
-  binding.pry 
+  @team = Team.new(details)
+  @hero = Hero.new(details)
   erb :team
 end 
 
