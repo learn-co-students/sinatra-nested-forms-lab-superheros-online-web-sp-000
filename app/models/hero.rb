@@ -12,6 +12,8 @@ class Hero
     Heroes << self 
   end 
   
-  
+  def self.all 
+    Heroes 
+  end 
   
 end 

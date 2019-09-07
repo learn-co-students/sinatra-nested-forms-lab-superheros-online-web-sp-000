@@ -11,6 +11,7 @@ end
 post '/teams' do 
   @team = Team.new(params[:team])
   @hero = Hero.new(params[:hero])
+  #binding.pry 
   erb :team
 end 
 

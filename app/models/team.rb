@@ -4,12 +4,15 @@ class Team
   Teams = []
   
   def initialize(params)
+     #binding.pry
     @name = params[:name]
     @motto = params[:motto]
     Teams << self 
   end
   
-  
+  def self.all 
+    Teams 
+  end 
   
   
   
