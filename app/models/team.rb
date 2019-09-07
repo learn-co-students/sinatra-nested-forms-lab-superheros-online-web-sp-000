@@ -1,10 +1,11 @@
+require 'pry'
 class Team 
   attr_reader :name, :motto 
   
   Teams = []
   
   def initialize(params)
-     #binding.pry
+     binding.pry
     @name = params[:name]
     @motto = params[:motto]
     Teams << self 
