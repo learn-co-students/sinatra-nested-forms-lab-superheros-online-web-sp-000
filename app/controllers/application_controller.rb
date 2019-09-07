@@ -9,8 +9,8 @@ get '/' do
 end 
 
 post '/teams' do 
-  @team = Team.new(details)
-  @hero = Hero.new(details)
+  @team = Team.new(params[:team])
+  @hero = Hero.new(params[:hero])
   erb :team
 end 
 
