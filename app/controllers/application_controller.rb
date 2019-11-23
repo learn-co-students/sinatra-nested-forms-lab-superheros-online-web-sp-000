@@ -10,10 +10,21 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
+     
+      
 
-        binding.pry
+        @team_name = params[:team][:name]
+        @team_motto = params[:team][:motto]
 
-        @team = Team.new(params['name'], params['power'], params['biography'])
+        @team_members_names = []
+        @team_members_biographies = []
+        @team_members_powers = []
+
+        params[:team][:hero].each do |hero|
+            @team_members_names << hero[:name]
+            @team_members_biographies << hero[:biography]
+            @team_members_powers << hero[:power]
+        end
 
         erb :super_hero # teams would be rendered here, check file names + match with path
     end

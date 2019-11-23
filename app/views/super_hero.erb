@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <h3>Team Name: <%= @team_name %></h3>
+        <h3>Team Motto: <%= @team_motto %></h3>
+
+        <% @team_members_names.each_with_index do |hero, index| %>
+            <h3> Member Name<%= index + 1 %> Name: <%= @team_members_names[index]%> </h3>
+            <p> Member Power<%= index + 1%> Power: <%= @team_members_biographies[index] %></p>
+            <p>Hero Biography <%= index + 1 %> Biography : <%= @team_members_powers[index]%></p>
+        <% end %>
+
+    </body>
+
+</html>
