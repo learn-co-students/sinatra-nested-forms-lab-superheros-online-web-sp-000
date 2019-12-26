@@ -1,7 +1,9 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
+# gem 'bundler' '2.0'
+# gem "rails", "4.2.8"
+
 
 gem 'sinatra', '1.4.6'
 gem 'rake', '10.4.2'
