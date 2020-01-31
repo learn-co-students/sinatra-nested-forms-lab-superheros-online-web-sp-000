@@ -17,7 +17,6 @@ class App < Sinatra::Base
      end
 
      @members = Superhero.all
-
       erb :super_hero
     end
 
