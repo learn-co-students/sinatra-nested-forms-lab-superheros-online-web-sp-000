@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heroes! of <%=@name%></title>
+  </head>
+  <body>
+    
+    <h1><%=@name%></h1>
+    <h2>Team Motto: <%=@motto%></h2>
+    
+    <% @members.each do |mem|  %>
+      <p>Hero Name: <%= mem["name"] %></p>
+      <p>Hero Power: <%= mem["pow"] %></p>
+      <p>Hero Biography: <%= mem["bio"] %></p>
+    <% end %>    
 
+  </body>
+</html>
 
 
