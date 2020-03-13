@@ -15,3 +15,5 @@ group :test do
   gem 'capybara', '2.5.0'
   gem 'rack-test', '>= 0.5.4'
 end
+gem 'standardrb'
+gem 'htmlbeautifier'
