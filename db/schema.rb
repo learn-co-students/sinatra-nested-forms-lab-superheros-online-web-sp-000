@@ -13,9 +13,11 @@
 ActiveRecord::Schema.define(version: 2020_03_14_064051) do
 
   create_table "heros", force: :cascade do |t|
+    t.integer "team_id"
     t.string "name"
     t.string "power"
     t.string "bio"
+    t.index ["team_id"], name: "index_heros_on_team_id"
   end
 
   create_table "teams", force: :cascade do |t|
