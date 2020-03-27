@@ -3,9 +3,13 @@ source "https://rubygems.org"
 
 # gem "rails"
 
+gem 'activerecord'
+gem 'sinatra-activerecord'
+gem 'sqlite3'
 gem 'sinatra', '1.4.6'
 gem 'rake', '10.4.2'
 gem 'thin', '1.6.4'
+gem 'tux'
 gem 'shotgun', '0.9'
 gem 'pry', '0.10.3'
 gem 'require_all', '1.3.2'
