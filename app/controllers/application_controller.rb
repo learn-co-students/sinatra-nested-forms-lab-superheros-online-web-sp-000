@@ -9,6 +9,7 @@ get '/' do
 end
 
 post '/teams' do
+    @teams = params["team"]
     erb :team
 end
 end
