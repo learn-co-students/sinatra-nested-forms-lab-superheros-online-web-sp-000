@@ -4,13 +4,13 @@ require 'pry'
 <h3><%=@team.motto%></h3>
 <p></p>
 <div name ="hero 1">
-  <%params[:team][:super_hero].each do |super_hero|%>
+  <%params[:team][:members].each do |super_hero|%>
   <h2>Hero Name: <%=super_hero.name%></h2>
   <h4>Hero Power: <%=super_hero.power%></h4>
   <h4>Hero Biography: <%=super_hero.bio%></h4>
 </div>
 <div name ="hero 2">
-  <%params[:team][:super_hero].each do |super_hero|%>
+  <%params[:team][:members].each do |super_hero|%>
   <h2>Hero Name: <%=super_hero.name%></h2>
   <h4>Hero Power: <%=super_hero.power%></h4>
   <h4>Hero Biography: <%=super_hero.bio%></h4>

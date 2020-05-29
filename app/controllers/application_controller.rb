@@ -1,5 +1,6 @@
 require 'pry'
 require 'sinatra/base'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -9,15 +10,18 @@ class App < Sinatra::Base
     erb :super_hero
   end 
   
-  post '/team' do 
-  @team = Team.new(params[:team])
-  params[:team][:super_hero].each do |details|
-    @super_hero = Super_hero.new(
-      details)
-    end
-      erb :team
-        binding.pry
-
-  end 
+post '/teams' do 
+  team_name = params[:team][:name]
+  motto = params[:team][:motto]
+  @team = Team.new(name: team_name, motto: motto)
+  
+  
+  team_members = params[:team][:members]
+  team_members.collect do|member|
+  Super_hero.new(member[:name], member[:power], member[:bio])
+  end
+  
+  erb :team
+end
 
 end

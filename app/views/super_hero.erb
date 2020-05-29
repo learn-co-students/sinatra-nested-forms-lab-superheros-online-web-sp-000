@@ -1,5 +1,5 @@
 :<h1>Create a Team and Heroes!</h1>
-<form action="/team" method="POST">
+<form action="/teams" method="POST">
   <p>Team Name 
   <input type="text" name="team[name]" id="team[name]">
   </p>
@@ -10,39 +10,39 @@
   <div name = "Hero 1">
     <h2>Hero 1</h2>
   <p>Hero's Name: 
-  <input type="text" name="member1_name" id="member1_name">
+  <input type="text" name="team[members][][name]" id="member1_name">
   </p>
   <p>Hero's Power: 
-  <input type="text" name="member1_power" id="member1_power">
+  <input type="text" name="team[members][][power]" id="member1_power">
   </p>
   <p>Hero's Biography: 
-  <textarea name="member1_bio" id="member1_bio">
+  <textarea name="team[members][][bio]" id="member1_bio">
   </textarea>
   </p>
   </div>
   <div name = "Hero 2">
   <h2>Hero 2</h2>
   <p>Hero's Name: 
-  <input type="text" name="member2_name" id="member2_name">
+  <input type="text" name="team[members][][name]" id="member2_name">
   </p>
   <p>Hero's Power: 
-  <input type="text" name="member2_power" id="member2_power">
+  <input type="text" name="team[members][][power]" id="member2_power">
   </p>
   <p>Hero's Biography: 
-  <textarea name="member2_bio" id="member2_bio">
+  <textarea name="team[members][][bio]" id="member2_bio">
   </textarea>
   </p>
   </div>
   <div name = "Hero 3">
   <h2>Hero 3</h2>
   <p>Hero's Name: 
-  <input type="text" name="member3_name" id="member3_name">
+  <input type="text" name="team[members][][name]" id="member3_name">
   </p>
   <p>Hero's Power: 
-  <input type="text" name="member3_power" id="member3_power">
+  <input type="text" name="team[members][][power]" id="member3_power">
   </p>
   <p>Hero's Biography: 
-  <textarea name="member3_bio" id="member3_bio">
+  <textarea name="team[members][][bio]" id="member3_bio">
   </textarea>
   </p>
   </div>
