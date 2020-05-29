@@ -1,5 +1,5 @@
-require 'sinatra/base'
 require 'pry'
+require 'sinatra/base'
 
 class App < Sinatra::Base
 
@@ -11,9 +11,8 @@ class App < Sinatra::Base
   
   post '/team' do 
   @team = Team.new(params[:team])
-  
-  params[:team][:super_hero].each do |details|
   binding.pry
+  params[:super_hero].each do |details|
     @super_hero = Super_hero.new(
       details)
     end
