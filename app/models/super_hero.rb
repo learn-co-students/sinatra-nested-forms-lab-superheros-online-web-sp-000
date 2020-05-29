@@ -1,10 +1,10 @@
-class Super_hero 
+class SupeHero 
   attr_accessor :name, :power, :bio
   @@all = []
   def initialize(params)
-    @name = name
-    @power = power
-    @bio = bio
+    @name = params[:name]
+    @power = params[:power]
+    @bio = params[:bio]
     @@all << self
   end 
   
