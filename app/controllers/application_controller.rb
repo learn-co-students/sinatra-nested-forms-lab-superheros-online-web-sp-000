@@ -8,14 +8,14 @@ class App < Sinatra::Base
   get '/' do 
     erb :super_hero
   end 
-  
+
   post '/teams' do
       @team = Team.new(params[:team])
       params[:team][:members].each do |details| 
+        binding.pry
         SuperHero.new(details)
       end
       @members = SuperHero.all
-binding.pry
       erb :teams
-    end
+    end  
 end
