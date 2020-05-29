@@ -10,18 +10,14 @@ class App < Sinatra::Base
     erb :super_hero
   end 
   
-post '/teams' do 
-  team_name = params[:team][:name]
-  motto = params[:team][:motto]
-  @team = Team.new(name: team_name, motto: motto)
-  
-  
-  team_members = params[:team][:members]
-  team_members.collect do|member|
-  Super_hero.new(member[:name], member[:power], member[:bio])
-  end
-  
-  erb :team
-end
+  post '/teams' do
+      @team = Team.new(params[:team])
+      params[:team][:members].each do |details| 
+        Super_hero.new(details)
+      end
+      @members = Super_hero.all
 
+      erb :teams
+binding.pry
+    end
 end
