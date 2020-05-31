@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flatiron</title>
+    </head>
+    <body>
+        <div class="team">
+            <h1><%= @team.name %></h3>
+            <h4>Team Motto: <%= @team.motto %></h4>
+        </div><br>
+
+        <% @members.each do |member| %>
+          <div class="member">
+            <p>Hero Name: <%= member.name %></p>
+            <p>Hero Power: <%= member.power %></p>
+            <p>Hero Biography: <%= member.bio %></p>           
+          </div><br>
+        <% end %>
+    </body>
+</html>

@@ -1,13 +1,12 @@
-require 'sinatra/base'
-require_relative '../models/team.rb'
-require_relative '../models/member.rb'
+require './environment'
+require_relative 'models/team.rb'
+require_relative 'models/member.rb'
 
 class App < Sinatra::Base
 
-    set :views, Proc.new { File.join(root, "../views/") }
-
     get '/' do
-        erb :index
+        "Hello World"
+        #erb :index
     end
 
     #get '/new' do
@@ -25,4 +24,5 @@ class App < Sinatra::Base
       erb :teams
     end     
 
+  end
 end
