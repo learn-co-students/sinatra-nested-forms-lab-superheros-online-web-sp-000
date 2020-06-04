@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -9,9 +10,9 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-        binding.pry
         @team_name = params[:team][:name]
         @team_motto = params[:team][:motto]
+        binding.pry
         
 
 
