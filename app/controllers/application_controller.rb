@@ -9,6 +9,12 @@ class App < Sinatra::Base
     end
 
     post '/teams' do 
+        # binding.pry
+        @team = params
+
         erb :'super_hero'
     end
 end
+
+# If value does not equal hash, then iterate through list
+# If member1_name equals member1_name then run the code
