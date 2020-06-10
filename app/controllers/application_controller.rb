@@ -12,9 +12,10 @@ class App < Sinatra::Base
             @team=Team.new(name: params[:team]{:name}, motto: params[:team][:motto])
             
             members=params[:team][:superhero]
-       
+            binding.pry
+            
             membeers.each do |hero|
-                binding.pry
+                
             Superheros.new({name: hero[:name], power: hero[:power], bio: hero[:bio]})
                 
             end
