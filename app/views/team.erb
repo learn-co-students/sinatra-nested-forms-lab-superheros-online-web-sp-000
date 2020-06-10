@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Superheroes!</title>
+    </head>
+    <body>
 
+        <h1>Display your Pirate here</h1>
+        <p><%= @team %></p>
+        <p><%= @motto %></p>
+        <p><% @members.each do |hero| %></p>
+            <p><%= hero[:name] %></p>
+            <p><%= hero[:power] %></p>
+            <p><%= hero[:bio] %></p>
+        <p><% end %></p>
 
-
+    </body>
+</html>
