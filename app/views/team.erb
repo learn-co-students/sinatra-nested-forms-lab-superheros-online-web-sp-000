@@ -1,34 +1,12 @@
-<h1>Team Name:<%=@team.name%><h1>
-<h2>Team Motto:<%=@team.motto%><h2>
+
+<h1>Team Name:<%=@team_name%><h1>
+<h2>Team Motto:<%=@team_motto%><h2>
 
 
-<%@super_heros.each.with_index do |hero, index|%>
+<%@members.each.with_index do |hero, index|%>
 <div class= 'hero'>
-<%if index == 0%>
-<h2>Hero Name:<%=hero.name%><h2>
-<h3>Hero Power:<%=hero.power%><h3>
-<h3>Hero Biogrophy:<%=hero.bio%><h3>
-<%end%>
-<%end%>
-</div><br> 
-
-<%@super_heros.each.with_index do |hero, index|%>
-<div class= 'hero'>
-<%if index == 1%>
-<h2>Hero Name:<%=hero.name%><h2>
-<h3>Hero Power:<%=hero.power%><h3>
-<h3>Hero Biogrophy:<%=hero.bio%><h3>
-<%end%>
-<%end%>
-</div><br> 
-
-
-<%@super_heros.each.with_index do |hero, index|%>
-<div class= 'hero'>
-<%if index == 2%>
-<h2>Hero Name:<%=hero.name%><h2>
-<h3>Hero Power:<%=hero.power%><h3>
-<h3>Hero Biogrophy:<%=hero.bio%><h3>
-<%end%>
+<h2>Hero Name:<%=@hero_name[index]%><h2>
+<h4>Hero Power:<%=@hero_power[index]%><h4>
+<h4>Hero Biogrophy:<%=@hero_bio[index]%><h4>
 <%end%>
 </div><br> 
