@@ -1,5 +1,5 @@
 require'pry'
-class Superheros
+class Superhero
 attr_reader :name, :power, :bio
 @@all=[] 
 def initialize(params)
