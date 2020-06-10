@@ -9,8 +9,7 @@ def initialize(params)
     @@all << self 
 end
 
-def save
+def self.all
 @@all
-  
 end 
 end 

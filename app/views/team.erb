@@ -1,4 +1,7 @@
-<div class="team">
-<h3>Hero Name:<><h3>
+<h1>Team NAme:<%=@team.name%><h1>
+<h2>Team Motto:<%=@team.motto%><h2>
 
-
+<%@super_hero.each do hero%>
+<h2>Hero Name:<%=hero.name%><h2>
+<h3>Hero power:<%=hero.power%><h3>
+ <h3>Hero Biogrophy:<%=hero.bio%><h3>
