@@ -1,1 +1,19 @@
-
+require 'pry'
+<form method="POST" action="/teams"
+<p><h1>Create a Team and Heroes!</h1></p>
+Team Name: <input type="text" name="team[name]"></br>
+Team Motto: <input type="text" name="team[motto]"></br>
+<h2>Hero 1</h2></br>
+Hero Name: <input id=member1_name input type="text" name="team[hero][][name]"></br>
+Hero Power: <input id=member1_power input type="text" name="team[hero][][power]"></br>
+Hero Biography: <input id=member1_bio input type="text" name="team[hero][][biography]"></br>
+<h2>Hero 2</h2></br>
+Hero Name: <input id= member2_name input type="text" name="team[hero][][name]"></br>
+Hero Power: <input id=member2_power input type="text" name="team[hero][][power]"></br>
+Hero Biography: <input id=member2_bio input type="text" name="team[hero][][biography]"></br>
+<h2>Hero 3</h2></br>
+Hero Name: <input id=member3_name input type="text" name="team[hero][][name]"></br>
+Hero Power: <input id=member3_power input type="text" name="team[hero][][power]"></br>
+Hero Biography: <input id=member3_bio input type="text" name="team[hero][][biography]"></br>
+<input type="submit" value="Submit" name="Submit" id="submit">
+</form>
