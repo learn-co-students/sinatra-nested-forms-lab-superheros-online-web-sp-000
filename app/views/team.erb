@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> <%= @team.name %> </title>
+  </head>
+  <body>
+    <h1><%= @team.name %></h1>
+    <h2><%= "Team Motto: #{@team.motto}" %>
+    <h2>  <%= "Hero Name: #{@hero1.name}" %> </h2>
+    <p>   <%= "Hero Power: #{@hero1.power}" %> </br>
+          <%= "Hero Biography: #{@hero1.bio}" %> </p>
 
+    <h2>  <%= "Hero Name: #{@hero2.name}" %> </h2>
+    <p>   <%= "Hero Power: #{@hero2.power}" %> </br>
+          <%= "Hero Biography: #{@hero2.bio}" %> </p>
 
-
+    <h2>  <%= "Hero Name: #{@hero3.name}" %> </h2>
+    <p>   <%= "Hero Power: #{@hero3.power}" %> </br>
+          <%= "Hero Biography: #{@hero3.bio}" %> </p>
+  </body>
+</html>
