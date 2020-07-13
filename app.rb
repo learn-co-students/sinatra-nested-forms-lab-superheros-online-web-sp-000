@@ -1,9 +1,9 @@
-require 'sinatra/base'
+require './environment'
 
-class App < Sinatra::Base
+# module FormsLab
+  class App < Sinatra::Base
 
-    set :views, Proc.new { File.join(root, "../views/") }
-
+    # code other routes/actions here
     get '/' do
        erb :super_hero
      end
@@ -11,13 +11,13 @@ class App < Sinatra::Base
        erb :'pirates/new'
      end
      post '/teams' do
-      #  binding.pry
        @team = Team.new(params[:team])
-       params[:team][:members].each do |details|
+       params[:team][:member].each do |details|
          Member.new(details)
        end
        @members = Member.all
 
        erb :'team'
      end
-end
+  end
+# end
