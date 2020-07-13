@@ -1,6 +1,5 @@
-
 <h1><%= @team[:team][:name]%></h1>
-<h2> Team Motto: <%= @team[:team][:motto] %> </h2>
+<h2> Team Motto: <%= @team[:team][:Motto] %> </h2>
 <h2> Hero Name: <%= @team[:team][:heroes][0][:name]%></h2>
 <p> Hero Power: <%= @team[:team][:heroes][0][:power]%></p>
 <p> Hero Biography: <%= @team[:team][:heroes][0][:bio]%></p>
