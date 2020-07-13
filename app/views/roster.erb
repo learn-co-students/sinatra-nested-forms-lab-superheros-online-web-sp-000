@@ -1,0 +1,8 @@
+<!-- Displaying Choices -->
+<p>Team <%= params[:team][:name] %></p>
+<p>Team Motto: <%= params[:team][:motto] %></p>
+<% for i in 0..2 %>
+  <p>Hero Name: <%= params[:members][i][:name] %></p>
+  <p>Hero Power: <%= params[:members][i][:power] %></p>
+  <p>Hero Biography: <%= params[:members][i][:bio] %></p>
+<% end %>
