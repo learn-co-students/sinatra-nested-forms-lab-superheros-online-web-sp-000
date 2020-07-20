@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+</head>
+<body>
+    <h1><%= params[:team][:name]%></h1>
+    <h2>Team Motto: <%= params[:team][:motto] %></h2>
+
+    <% params[:team][:members].each do |member| %>
+        <h3>Hero Name: <%= member[:name] %></h3>
+        <h3>Hero Power: <%= member[:power] %></h3>
+        <h3>Hero Biography: <%= member[:bio] %></h3>
+    <% end %>
+</body>
+</html>
