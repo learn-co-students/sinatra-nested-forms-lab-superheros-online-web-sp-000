@@ -1,3 +1,12 @@
-
-
+<%= @team[:name] %><br>
+Team Motto: <%= @team[:motto] %><br>
+<%
+@team[:members].each do |member|
+%>
+Hero Name: <%= member[:name] %><br>
+Hero Power: <%= member[:power] %><br>
+Hero Biography: <%= member[:bio] %><br>
+<%
+end
+%>
 
