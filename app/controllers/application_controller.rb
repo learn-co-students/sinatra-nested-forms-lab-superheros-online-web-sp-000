@@ -9,6 +9,10 @@ class App < Sinatra::Base
     end
 
     get '/form' do
+    
+    end
+
+    post '/team' do
         
     end
 
