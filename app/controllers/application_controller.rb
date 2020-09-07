@@ -6,14 +6,13 @@ class App < Sinatra::Base
 
     get '/' do
     
-    end
-
-    get '/form' do
-    
+        erb :super_hero
     end
 
     post '/team' do
-        
+       
+
+        erb :team
     end
 
 

@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Page Title</title>
-  </head>
-  
-  <body>
+<h1>Display your team here</h1>
+<div class="team">
+    <h3>Team Name: <% @team.name %></h3>
+    <h4>Team Motto: <% @team.motto %></h4>
 
-  <h1>The first heading</h1>
-  <p>The first paragraph</p>
+    <h4>Hero Name: <% @member1_name.name%></h4>
+    <p>Hero Power: <% @member1_power.power%></p>
+    <p>Hero Biography: <% @member1_biography.biography%></p>
 
-  </body>
-</html>
+    <h4>Hero Name: <% @member2_name.name%></h4>
+    <p>Hero Power: <% @member2_power.power%></p>
+    <p>Hero Biography: <% @member2_biography.biography%></p>
+
+    <h4>Hero Name: <% @member3_name.name%></h4>
+    <p>Hero Power: <% @member3_power.power%></p>
+    <p>Hero Biography: <% @member3_biography.biography%></p>
+</div>
+
 
 
