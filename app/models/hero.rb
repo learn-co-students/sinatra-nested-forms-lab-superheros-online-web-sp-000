@@ -1,0 +1,19 @@
+class Hero
+
+attr_reader :name, :power, :bio
+
+@@all = []
+
+def initialize(name:, power:, bio:)
+    @name = name
+    @power = power
+    @bio = bio
+    @@all << self
+end
+
+def self.all
+    return @@all
+end
+
+
+end
