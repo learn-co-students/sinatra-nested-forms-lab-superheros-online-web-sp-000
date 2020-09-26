@@ -1,12 +1,12 @@
 class Team
 
-attr_reader :name, :motto
+attr_accessor :name, :motto, :members
 
 @@all = []
 
-def initialize(name:, motto:)
-    @name = name
-    @motto = motto
+def initialize(params)
+    @name = params[:name]
+    @motto = params[:motto]
     @@all << self
 end
 
