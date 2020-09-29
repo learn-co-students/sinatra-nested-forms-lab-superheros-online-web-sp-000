@@ -10,10 +10,7 @@ class App < Sinatra::Base
 
     post '/teams' do
     	@team = params[:team]
-    	@member1 = @team[:members][0]
-    	@member2 = @team[:members][1]
-    	@member3 = @team[:members][2]
-
+		@team_members = @team[:members]
 
     	erb :super_hero
     end
