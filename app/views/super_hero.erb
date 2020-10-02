@@ -1,1 +1,41 @@
 
+<h1> Create a Team and Heroes! </h1>
+<form action="/teams" method="POST">
+<input type="text" name="team[name]" id="team[name]">
+<input type="text" name="team[motto]" id="team[motto]">
+
+<input type="text" name="team[members][]name" id="member1_name">
+<input type="text" name="team[members][]power" id="member1_power">
+<input type="text" name="team[members][]bio" id="member1_bio">
+
+<input type="text" name="team[members][]name" id="member2_name">
+<input type="text" name="team[members][]power" id="member2_power">
+<input type="text" name="team[members][]bio" id="member2_bio">
+
+<input type="text" name="team[members][]name" id="member3_name">
+<input type="text" name="team[members][]power" id="member3_power">
+<input type="text" name="team[members][]bio" id="member3_bio">
+
+<input type="submit" id="submit">
+</form>
+
+
+<!--
+# structure 
+params = {
+    team => {
+        name => "team ruby",
+        motto => "we love ruby",
+        members => [
+            {
+                name => "Amanda"
+                power => "ruby"
+                bio => "i love ruby"
+            }, 
+            {
+                
+            }
+        ]
+    }
+}
+-->
