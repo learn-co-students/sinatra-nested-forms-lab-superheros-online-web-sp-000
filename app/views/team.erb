@@ -1,3 +1,11 @@
+<h2><%= @team_data["team"]["name"] %></h2>
+
+<h3>Team Motto: <%= @team_data["team"]["motto"] %></h3>
 
 
-
+<% @team_data["team"]["members"].each_with_index do |member, index|%>
+    <%= index + 1 %>
+    <li>Hero Name: <%= member["name"] %></li>
+    <li>"Hero Power: <%= member["power"] %> "</li>
+    <li>Hero Biography: <%= member["bio"] %></li>
+<% end %>
