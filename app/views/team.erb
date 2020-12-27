@@ -1,3 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Hero Team</title>
+</head>
+<body>
+  <h1><%= @team[:name] %></h1>
+  <h2>Team Motto: <%= @team[:motto] %></h2>
+  <h2>Hero Name: <%= @heros.first[:name] %></h2>
+  <h5>Hero Power: <%= @heros.first[:power] %></h5>
+  <h5>Hero Biography: <%= @heros.first[:biography] %></h5>
+  <h2>Hero Name: <%= @heros[1][:name] %></h2>
+  <h5>Hero Power: <%= @heros[1][:power] %></h5>
+  <h5>Hero Biography: <%= @heros[1][:biography] %></h5>
+  <h2>Hero Name: <%= @heros.last[:name] %></h2>
+  <h5>Hero Power: <%= @heros.last[:power] %></h5>
+  <h5>Hero Biography: <%= @heros.last[:biography] %></h5>
+</body>
+</html>
 
 
