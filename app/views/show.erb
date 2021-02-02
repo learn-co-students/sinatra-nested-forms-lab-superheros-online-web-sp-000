@@ -6,23 +6,15 @@
 </div>
 
 <h1>Superheros</h1><br>
-<% @superheros.each do |superhero|%>
+
+<% @superheros.each.with_index do |superhero,i|%>
 <div class="superhero">
-<h1>Hero 1</h1>
+<h1>Hero <%=i+=1%></h1>
 
 <p>Hero Name: <%=superhero.name%></p><br>
 <p>Hero Power: <%=superhero.power%></p><br>
 <p>Hero Biography: <%=superhero.bio%></p><br>
 
-<h1>Hero 2</h1>
-<p>Hero Name: <%=superhero.name%></p><br>
-<p>Hero Power: <%=superhero.power%></p><br>
-<p>Hero Biography: <%=superhero.bio%></p><br>
-
-<h1>Hero 3</h1>
-<p>Hero Name: <%=superhero.name%></p><br>
-<p>Hero Power: <%=superhero.power%></p><br>
-<p>Hero Biography: <%=superhero.bio%></p><br>
 </div><br>
 
 <% end %>
