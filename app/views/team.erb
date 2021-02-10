@@ -1,3 +1,23 @@
+<h1> <%= @team.name %> </h1>
 
+<h2>Team Motto: <%= @team.motto %> </h2><br>
+<h2> Hero 1 </h2>
+<% @superheros.each.with_index do |hero, index| %>
+  <%if index == 0 %>
+  <p>Hero's Name: <%= superhero.name%></p><br>
+  <% end %>
+<% end %>
 
+<h2> Hero 2 </h2>
+<% @superheros.each.with_index do |hero, index| %>
+  <%if index == 1 %>
+  <p>Hero's Name: <%= superhero.name%></p><br>
+  <% end %>
+<% end %>
 
+<h2> Hero 3 </h2>
+<% @superheros.each.with_index do |hero, index| %>
+  <%if index == 2 %>
+  <p>Hero's Name: <%= superhero.name%></p><br>
+  <% end %>
+<% end %>
